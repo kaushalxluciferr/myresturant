@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+:root{
+    --clr-primary:#fe5722
+    --clr-secondary:#272d36
+}
+*,
+*::after,
+*::before{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans","Helvetica";
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#fff ;
+    color: var(--clr-primary);
+    overflow-x: hidden;
+    
+}
+.section{
+    width: 100%;
+    pad: 40px 0;
+
+}
+.flex{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    padding: 0 30px;
+
+}
+.primary{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+.secondary{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tertiary{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 14px 20px;
+    background: var(--clr-primary);
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background:#fff5f2 ;
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,0.2);
+    z-index: 22;
+}
+label.logo{
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+    display: inline-block;
+}
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+.menu a:active,.menu a:hover{
+    border-bottom: 2px solid var(--clr-primary);
+    transition: 0.3s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right:40px ;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* end menu */
+
+#hero-section{
+    background: #fff5f2;
+    margin-top: 60px;
+
+}
+.text,.visual{
+    width: 50%;
+}
+.visual img{
+    width: 80%;
+    height: auto;
+    display: block;
+}
+#hero-section .text{
+    margin-left: 30px;
+}
+#hero-section .visual{
+    margin-left: auto;
+}
+/* end herosection */
+
+#how-it-works{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid #b2b2b2 ;
+    padding:25px 5px ;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.box h3{
+    font-size:20px ;
+}
+
+.box p{
+    font-size: 15px;
+}
+
+.box ion-icon{
+    font-size: 35px;
+    color: var(--clr-primary);
+    margin: 15px 0;
+}
+.box:hover,.box:active{
+    background: var(--clr-primary);
+    color: #fff;
+    border-color: var(--clr-primary);       
+    background-color: rgb(205, 63, 11);
+}
+/* end how it sworks */
+
+#about .visual img,#app .visual img{
+    margin-right: auto;
+}
+
+
+/* end about */
+
+/* resturant meny=u start */
+
+.category{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0 40px 0;
+
+}
+.category li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.category li:active{
+    color: #fe5722;
+}
+.resturant-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.menu-items{
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.menu-items img{
+    width: 100%;
+}
+.order{
+    justify-content: space-between;
+}
+.btn-menu{
+    padding: 6px 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #fe5722;
+    color: #fe5722;
+}
+.title{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+.location{
+    font-size: 18px;
+    font-weight: 500;
+}
+/* end resturant menu */
+
+/* testomonial */
+#testimonial .visual img{
+    margin-left: auto;
+
+}
+.user{
+    margin-top: 30px;
+    justify-content: start;
+}
+.user img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* end testomonial */
+/* faq section */
+
+#faq .secondary{
+    text-align: center;
+}
+
+.faq{
+    width: 60%;
+    margin: 50px auto 20px auto;
+
+}
+summary{
+    padding: 16px;
+    border: 1px solid #b2b2b2;
+    margin: 16px;
+    outline: none;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+details[open] summary ~ *{
+    animation: open 1s ease-in-out;
+}
+@keyframes opens{
+    from{
+        opacity: 1;
+        margin-top: -10px;
+    }
+    top{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+/* faq ends */
+ /* apps section starts */
+
+ #app{
+    text-align: center;
+
+ }
+ .app-store{
+    background: #000;
+    margin: 0 10px;
+    padding: 4px 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+
+ }
+ .app-store p{
+    margin-top: 8px;
+ }
+ .app-store span{
+    font-size: 16px;
+    line-height: 25px;
+ }
+ .app-store ion-icon{
+    font-size: 30px;
+    margin-right: 10px;
+ }
+ .download{
+    margin: 30px 0;
+ }
+
+ /* end app */
+ /* footer start */
+
+ .footer{
+    background-color: #272d36;
+    color: #b2b2b2;
+    padding: 30px 0;
+
+ }
+ .footer .container{
+    justify-content: space-between;
+    align-items: flex-start;
+
+ }
+ .footer h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+ }
+ .footer ul{
+    list-style: none;
+    line-height: 30px;
+    font-size: 16px;
+ }
+ .footer ul li{
+    cursor: pointer;
+
+ }
+ .footer-about{
+    width: 35%;
+
+ }
+ .copyright{
+    text-align: center;
+    padding: 20px 0;
+    margin-top:30px ;
+    border-top: 1px solid #b2b2b2;
+ }
